@@ -1,0 +1,45 @@
+body {
+    background-image: url("./images/newspaper-background.jpg");
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+}
+
+.jumbotron {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'PT Mono', monospace;
+}
+
+#articles {
+    background-color: rgb(173, 216, 230);
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+    border-radius: 10px;
+}
+.article {
+    margin-bottom: 0;
+}
+
+.articleLink {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+#titleinput, #bodyinput {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.noteSub {
+    margin-bottom: 10px;
+}
+
