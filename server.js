@@ -59,7 +59,7 @@ app.get("/scrape", function (req, res) {
 
       db.Article.findOne({ title: result.title, link: result.link })
         .then(function (dbArticle) {
-          // If we were able to successfully find an Article with the given id, send it back to the client
+          // If we found an article in the db with the same title and link, do not add
           console.log(dbArticle.title + " already in db!")
         })
         .catch(function (err) {
@@ -75,7 +75,8 @@ app.get("/scrape", function (req, res) {
         });
     });
     // Send a message to the client
-    res.send("Scrape Complete");
+    console.log("Scrape Complete");
+    res.end();
   });
 });
 
